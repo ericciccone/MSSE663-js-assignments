@@ -1,8 +1,8 @@
 var hello1 = 'Hello World';
-const hello2 = 'Hello Worlds!!!';
+const hello2 = 'Hello Earth!';
 
-hello1 = 'derp';
-hello2 = 'derp2';
+hello1 = 'hi earth 1';
+hello2 = 'hi earth 2';
 
 console.log(hello1);
 console.log(hello2);
