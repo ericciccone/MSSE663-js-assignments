@@ -4,7 +4,7 @@ export interface Cat {
     age: number;
     getName: () => string;
     getAge: () => number;
-//    isComplete: () => boolean;
+    isComplete: (markings: string, name: string, age: number) => boolean;
 }
 
 export class Bengal implements Cat {
@@ -22,12 +22,13 @@ export class Bengal implements Cat {
         return this.age;
     }
 
-//    isComplete() {
-//        if (!(this.markings && this.name && this.age)) { 
-//            return true;}
-//    }
+    isComplete(markings: string, name: string, age: number) : boolean {
+        return !(markings && name && age == null || markings && name && age === 0);
+        }
+    }
 }
 
 const sparrow = new Bengal("rosettes", "sparrow", 7);
 console.log(sparrow.getName());
 console.log(sparrow.getAge());
+console.log(sparrow.isComplete("rosttes", "sparrow", 7));
