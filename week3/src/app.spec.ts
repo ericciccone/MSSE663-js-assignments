@@ -16,4 +16,8 @@ describe('Test for app.ts', () => {
     it('shoud output Cat\'s markings', () => {
         expect(bengal.markings).to.equal("rosettes");
     })
+    
+    it('shoud evaluate true', () => {
+        expect(bengal.isComplete("rosettes", "sparrow", 6)).to.equal(true);
+    })
 })
