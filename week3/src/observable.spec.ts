@@ -1,6 +1,6 @@
 import 'mocha';
 import { expect } from 'chai';
-import { printArray } from './observables';
+import { printArray } from './observable';
 
 describe('Test for observables.ts', () => {
     it('should output the array 1 3 5 7 9', () => {

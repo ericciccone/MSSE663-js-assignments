@@ -7,6 +7,6 @@
 import { of } from 'rxjs';
 import { map } from 'rxjs/operators';
 import { Observable } from 'rxjs';
-    const array = of([1,3,5,7,9]);
-    const printArray = array.pipe(map(values => values));
+    export const array = of([1,3,5,7,9]);
+    export const printArray = array.pipe(map(values => values));
     export const a = printArray.subscribe(console.log);

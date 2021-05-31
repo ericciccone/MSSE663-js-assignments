@@ -1,5 +1,6 @@
-import 'mocha';
 import { expect } from 'chai';
+import { it } from 'mocha';
+import 'mocha';
 import { Bengal } from './app';
 
 describe('Test for app.ts', () => {

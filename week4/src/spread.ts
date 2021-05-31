@@ -5,12 +5,16 @@ export const originalNumbers = numbers.map(number => number);
 console.log(originalNumbers);
 
 // refactor here
+export const numbersCopy = [...numbers];
+
+console.log(numbersCopy);
 
 // #2 Combining arrays
 export const winners = ['first'];
 export const runnerUps = ['second', 'third', 'fourth', 'fifth'];
 
 // refactor here
+export const combineArray = [...winners, ...runnerUps];
 
 // #3 Combining objects
 export const bob = {
@@ -24,6 +28,12 @@ export const kyle = {
 export const originalPersons = Object.assign(bob, kyle);
 
 // refactor here
+export const combineObjects = {
+    ...bob,
+    ...kyle
+};
+
+console.log(combineObjects);
 
 // #4 Modifying values in arrays of objects
 export const data = [
@@ -54,3 +64,9 @@ export const originalUpdates = data.map(task => {
 });
 
 // refactor here
+export const dataCopy = [...data];
+export const updateCopy = { ...update };
+export const refactor = dataCopy.map(x => (x.id === updateCopy.id ? 
+  { ...x, task: "Do the other thing... again" } : x));
+
+  console.log(refactor)
