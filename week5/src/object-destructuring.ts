@@ -32,10 +32,10 @@ console.log(id); // 1
 export const nestedObjectCopy = {user, address: {city, state}, id};
 
 // #3 Object with key value pairs: construct a statement
-{ greeting: 'hello', name: 'taylor' };
+export const obj = { greeting: 'hello', name: 'taylor' };
 
 // construct statement here
-export const key = { greeting: 'hello', name: 'taylor' };
+Object.entries(obj).forEach(([key, value]) => console.log(`${key}: ${value}`));
 
 // expected result: 'hello, taylor!'
-console.log(key.greeting + ", " + key.name + "!");
+console.log(obj.greeting) + " " + (object.name);
