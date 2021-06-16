@@ -148,4 +148,3 @@ const mapper = (arr: Ninja[]) => (status: Object) =>
 });
 
 export const ninjaBB1: NinjaBB[] = mapper(ninjas1)(statuses);
-export const ninjaBB2: NinjaBB[] = mapper(ninjas2)(statuses);
